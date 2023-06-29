@@ -1,11 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Subhadip Saha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(10, 0, 44);
+            color: aliceblue;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        nav ul li a:hover {
+            color: rgb(161, 208, 249);
+        }
+
+        /* .left {
+            font-size: 2rem;
+        } */
+
+        .intro {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0;
+        }
+
+        .intro>div {
+            width: 40%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .rightSection img {
+            width: 70%;
+        }
+
+        .purple {
+            color: rgb(84, 156, 244);
+        }
+
+        #element {
+            color: rgb(84, 156, 244);
+        }
+
+        .expTitle {
+            font-size: 1.5rem;
+        }
+
+        .exp {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .grayText {
+            color: gray;
+        }
+
+        .expLine {
+            background: aliceblue;
+            height: 80vw;
+            width: 2px;
+            margin: 60px 0;
+            display: flex;
+        }
+
+        .image-exp {
+            width: 50px;
+            position: relative;
+        }
+
+    </style>
 </head>
+
 <body>
-    Hello World
+    <header>
+        <nav>
+            <!-- <div class="left">Subhadip's Portfolio</div> -->
+            <div class="right">
+                <ul>
+                    <li><a href="\">Home</a></li>
+                    <li><a href="\">About</a></li>
+                    <li><a href="\">Experience</a></li>
+                    <li><a href="\">Projects</a></li>
+                    <li><a href="\">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Subhadip Saha</span>
+                <div>and I am a <span id="element"></span></div>
+
+            </div>
+            <div class="rightSection">
+                <img src="profile.png" class="profile">
+            </div>
+        </section>
+        <section class="exp">
+            <span class="grayText">What I have done so far</span>
+            <div class="expTitle">
+                <h1>Work Experience</h1>
+            </div>
+            <div class="expLine">
+                <div class="phicsit">
+                    <img src="social.png" alt="phicsit" class="image-exp">
+                    <div class="exp-title"><h1>Graphic Designer</h1></div>
+                    <div class="exp-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti a ad accusantium.</div>
+                </div>
+                <div class="social"></div>
+                <div class="intel"></div>
+                <div class="devdotcom"></div>
+                
+            </div>
+            
+        </section>
+        
+        
+        
+    </main>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Game Developer', 'Video Editor', 'Graphic Designer'],
+            typeSpeed: 60,
+        });
+    </script>
 </body>
+
 </html>
