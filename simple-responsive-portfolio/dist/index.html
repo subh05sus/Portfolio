@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Subhadip Saha</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .intro {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 100px 0;
+    }
+
+    .intro>div {
+      width: 50%;
+    }
+
+    .leftSection {
+      font-size: 3rem;
+    }
+
+    .rightSection img {
+      width: 70%;
+    }
+
+    .purple {
+      color: rgb(84, 156, 244);
+    }
+
+    #element {
+      color: rgb(84, 156, 244);
+    }
+
+    .line-white {
+      background: aliceblue;
+      height: 2px;
+      width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="right">
+        <ul>
+          <li><a href="#home" onclick="scrollToSection('#home')">Home</a></li>
+          <li><a href="#experience" onclick="scrollToSection('#experience')">Experience</a></li>
+          <li><a href="#skills" onclick="scrollToSection('#skills')">Experience</a></li>
+          <li><a href="#projects" onclick="scrollToSection('#projects')">Projects</a></li>
+          <li><a href="#contact" onclick="scrollToSection('#contact')">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="about-myself" id="home">
+    <div class="content">
+      <h2></h2>
+      <section class="intro">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Subhadip Saha</span>
+          <div>and I am a <span id="element"></span></div>
+        </div>
+        <div class="rightSection">
+          <br>
+          <img src="profile.png" class="profile">
+        </div>
+      </section>
+    </div>
+  </section>
+
+
+  <section class="experience" id="experience">
+    <div class="content">
+      <h1>Experiences</h1>
+      <ul>
+        <li>
+          <div class="experience-content hidden">
+            <img src="phicsit.png" height="50px">
+            <h1 style="color:black">Graphic Designer</h1>
+            <h2>PHICSIT</h2>
+            <div class="experience-time">May 2023 - Present</div>
+            <p>I made designs for promotional posters for PHICSIT and created visually appealing graphics for speaker
+              sessions.
+              I used Canva, Figma, and Microsoft Designer for high-quality designs</p>
+          </div>
+        </li>
+        <li>
+          <div class="experience-content hidden">
+            <img src="intel.png" height="50px">
+            <h1 style="color:black">Student Ambassador</h1>
+            <h2>Intel</h2>
+            <div class="experience-time">Apr 2023 - Present</div>
+            <p>I represented Intel on campus as a brand advocate, promoted Intel's technologies and initiatives
+              to fellow students</p>
+          </div>
+        <li>
+          <div class="experience-content hidden">
+            <img src="social.png" height="50px">
+            <h1 style="color:black">Graphic Designer</h1>
+            <h2>Social</h2>
+            <div class="experience-time">Mar 2023 - Present</div>
+            <p>I have created posters for 'Social Summer of Code 2023' and speaker sessions using Canva, Figma, and
+              Photoshop</p>
+          </div>
+        </li>
+        <li>
+          <div class="experience-content hidden">
+            <img src="unity.png" height="50px">
+            <h1 style="color:black">Game Developer</h1>
+            <h2>Self Taught</h2>
+            <div class="experience-time">Dec 2022 - Present</div>
+            <p>I am a newvie Game developer. I use Unity Game engine to make 3D games. I have made 3 games till now and
+              currently working on an open world RPG game</p>
+          </div>
+        </li>
+        <li>
+          <div class="experience-content hidden">
+            <img src="devdotcom.png" height="50px">
+            <h1 style="color:black">Co-Founder</h1>
+            <h2>DevDotCom</h2>
+            <div class="experience-time">Nov 2022 - Present</div>
+            <p>I have built and grew a public coding community with 500+ members
+              and organized successful coding events and competitions and led
+              events on Git and GitHub, providing valuable learning
+              and also designed promotional materials and posters using graphic design skills, increasing visibility and
+              engagement on social media platforms</p>
+          </div>
+        </li>
+
+
+      </ul>
+    </div>
+  </section>
+
+
+  <section class="skills" id="skills">
+    <div class="content">
+      <div class="development-wrapper">
+        <h2 class="development-title">Skills</h2>
+        <ul class="skills-bar-container">
+          <li>
+            <div class="progressbar-title">
+              <h3>Python</h3>
+              <span class="percent" id="html-pourcent"></span>
+            </div>
+            <div class="bar-container" data-percent="85">
+              <span class="progressbar" id="progress-html"></span>
+            </div>
+          </li>
+          <li>
+            <div class="progressbar-title">
+              <h3>C/C++</h3>
+              <span class="percent" id="css-pourcent"></span>
+            </div>
+            <div class="bar-container" data-percent="70">
+              <span class="progressbar" id="progress-css"></span>
+            </div>
+          </li>
+          <li>
+            <div class="progressbar-title">
+              <h3>C#</h3>
+              <span class="percent" id="javascript-pourcent"></span>
+            </div>
+            <div class="bar-container" data-percent="60">
+              <span class="progressbar" id="progress-javascript"></span>
+            </div>
+          </li>
+          <li>
+            <div class="progressbar-title">
+              <h3>Unity Game Enigne</h3>
+              <span class="percent" id="php-pourcent"></span>
+            </div>
+            <div class="bar-container" data-percent="65">
+              <span class="progressbar" id="progress-php"></span>
+            </div>
+          </li>
+          <li>
+            <div class="progressbar-title">
+              <h3>HTML5/CSS#</h3>
+              <span class="percent" id="angular-pourcent"></span>
+            </div>
+            <div class="bar-container" data-percent="60">
+              <span class="progressbar" id="progress-angular"></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="tools-knowledge-wrapper">
+        <div class="tools-wrapper">
+          <h2 class="title">Tools</h2>
+          <ul class="tools">
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              Canva
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              Unity
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              Figma
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              Adobe Premiere Pro
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              Wondershare Filmora
+            </li>
+          </ul>
+        </div>
+        <div class="knowledge-wrapper">
+          <h2 class="title">Knowledge</h2>
+          <ul class="knowledge">
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              3D Modelling
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              Game Design
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              Graphic Design
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              Video Editing
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </section>
+
+
+  <section class="resume" id="resume">
+    <div class="content">
+      <a href="https://d1fdloi71mui9q.cloudfront.net/jxuCDWbTyKSNGttNrQ0T_Resume.pdf" target="_blank">
+        <div class="btn-resume">
+          <i class="fa fa-download fa-2x" aria-hidden="true"></i>
+          <span>Download my resume<span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+
+  <section class="portfolio" id="projects">
+    <div class="content">
+
+      <h1>Projects</h1>
+
+      <div class="projects">
+
+        <div class="project">
+          <div class="project-image">
+            <img src="geetagpt.png" alt="" />
+          </div>
+          <div class="project-title">
+            <h2>GeetaGPT</h2>
+          </div>
+          <div class="project-description">
+            <p>GeetaGPT is a GPT based Chatbot made with Flask which possesses knowledge about Shrimadvagwat Geeta and
+              act like Lord Krishna.
+              It acts like a replica of Lord Krishna with the vast knowledge of Shimadbhagwat Geeta and can answer your
+              problems about life. It is built with Flask and Django</p>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="meowgpt.png" alt="" />
+          </div>
+          <div class="project-title">
+            <h2>MeowGPT</h2>
+          </div>
+          <div class="project-description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi magni consequatur dolores distinctio
+              quod accusamus voluptatum obcaecati animi expedita rem odio explicabo veritatis voluptas ducimus voluptate
+              earum laborum, qui maiores doloremque deserunt sapiente corporis et culpa, nihil fuga. Sit nemo maxime
+              itaque maiores iure, similique ratione veritatis quidem nulla explicabo.</p>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="block.png" alt="" />
+          </div>
+          <div class="project-title">
+            <h2>BlockRush Game</h2>
+          </div>
+          <div class="project-description">
+            <p>It is a 3D endless block game made with Unity. I use C# scripts to code this game.</p>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="anya.png" alt="" />
+          </div>
+          <div class="project-title">
+            <h2>Anya Endless Runner</h2>
+          </div>
+          <div class="project-description">
+            <p>It is a 3D endless runner game made with Unity. It is based on an anime character "Anya Forger". I use C#
+              scripts to code this game.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <section class="get-in-touch">
+    <h1 class="title">Get in touch</h1>
+    <form class="contact-form row" onsubmit="sendEmail();reset(); return false">
+      <div class="form-field col x-50">
+        <input id="name" class="input-text js-input" type="text" required>
+        <label class="label" for="name">Name</label>
+      </div>
+      <div class="form-field col x-50">
+        <input id="email" class="input-text js-input" type="email" required>
+        <label class="label" for="email">E-mail</label>
+      </div>
+      <div class="form-field col x-100">
+        <input id="message" class="input-text js-input" type="text" required>
+        <label class="label" for="message">Message</label>
+      </div>
+      <div class="form-field col x-100 align-center">
+        <input class="submit-btn" type="submit" value="Submit" id="btn">
+      </div>
+    </form>
+  </section> -->
+
+
+  <section class="contact" id="contact">
+    <div class="content">
+      <ul class="socials">
+
+        <li class="social">
+          <a href="https://twitter.com/SubhadipSuDi" target="_blank" class="twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="social">
+          <a href="https://www.instagram.com/subh05sus_" target="_blank" class="instagram">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="social">
+          <a href="https://www.linkedin.com/in/subhadipsahaofficial" target="_blank" class="linkedin">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="social">
+          <a href="https://github.com/subh05sus" target="_blank" class="github">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+  </section>
+
+  
+  <section class="footer">
+    <p>Made by <a href="https://linktr.ee/subhadipsaha">Subhadip Saha</a></p>
+  </section>
+
+
+  <!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="./script.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Game Developer', 'Video Editor', 'Graphic Designer'],
+      typeSpeed: 60,
+    });
+  </script>
+<!-- 
+  <script>
+    var btn = document.getElementById("btn");
+    btn.addEventListener('click', function(e){
+      e.preventDefault()
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+      var body = 'name: ' + name +"<br>email: "+email+"<br>message: "+message; 
+
+      Email.send({
+              SecureToken : "e52b42da-8d94-4445-af22-fe9a9bf87013",
+              To: 'sahasuhadipfkk@gmail.com',
+              From: "sahasubhadip54@gmail.com",
+              Subject: "New Contact Form Enquiry",
+              Body: body
+            }).then(
+        message => alert(message)
+      );
+    })
+
+
+  </script> -->
+  <script>
+    function scrollToSection(sectionId) {
+      const section = document.querySelector(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    </script>
+
+</body>
+
+</html>
